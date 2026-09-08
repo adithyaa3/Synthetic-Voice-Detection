@@ -1,58 +1,167 @@
 import os
+import sys
 import numpy as np
 import librosa
-import tensorflow as tf
-import sys
+import joblib
 
-print("=== SYNTHETIC VOICE DETECTOR - PREDICTION ===")
+print("=== SYNTHETIC VOICE DETECTOR - SVM PREDICTION ===")
+
+
+def extract_features(audio_path):
+
+    # Load first 4 seconds
+    y, sr = librosa.load(
+        audio_path,
+        sr=22050,
+        duration=4
+    )
+
+    # Extract 40 MFCCs
+    mfcc = librosa.feature.mfcc(
+        y=y,
+        sr=sr,
+        n_mfcc=40
+    )
+
+    # Mean of each MFCC
+    mfcc_mean = np.mean(
+        mfcc,
+        axis=1
+    )
+
+    # Standard deviation of each MFCC
+    mfcc_std = np.std(
+        mfcc,
+        axis=1
+    )
+
+    # Combine them
+    features = np.concatenate(
+        (mfcc_mean, mfcc_std)
+    )
+
+    return features
+
 
 def predict_audio(audio_path):
-    """Predict if audio is Human or AI"""
+
     try:
-        y, sr = librosa.load(audio_path, sr=22050, duration=4)
-        
-        mel_spec = librosa.feature.melspectrogram(y=y, sr=sr, n_mels=128)
-        log_mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
 
-        if log_mel_spec.shape[1] < 862:
-            log_mel_spec = np.pad(log_mel_spec, ((0, 0), (0, 862 - log_mel_spec.shape[1])))
-        else:
-            log_mel_spec = log_mel_spec[:, :862]
+        BASE_PATH = os.path.dirname(
+            os.path.dirname(__file__)
+        )
 
-        log_mel_spec = (log_mel_spec - np.min(log_mel_spec)) / (np.max(log_mel_spec) - np.min(log_mel_spec))
+        model_path = os.path.join(
+            BASE_PATH,
+            "models",
+            "voice_detector_svm.pkl"
+        )
 
-        input_data = np.expand_dims(log_mel_spec, axis=(0, -1))
+        scaler_path = os.path.join(
+            BASE_PATH,
+            "models",
+            "scaler.pkl"
+        )
 
-        model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'voice_detector.h5')
-        model = tf.keras.models.load_model(model_path)
+        # Load trained SVM
+        model = joblib.load(
+            model_path
+        )
 
-        prediction = model.predict(input_data, verbose=0)[0][0]
+        # Load scaler
+        scaler = joblib.load(
+            scaler_path
+        )
 
-        if prediction > 0.5:
+        print("\nProcessing audio...")
+
+        # Extract MFCC features
+        features = extract_features(
+            audio_path
+        )
+
+        # Convert to shape (1, 80)
+        features = features.reshape(
+            1,
+            -1
+        )
+
+        # Apply same scaling used during training
+        features_scaled = scaler.transform(
+            features
+        )
+
+        # Prediction
+        prediction = model.predict(
+            features_scaled
+        )[0]
+
+        # Probability
+        probabilities = model.predict_proba(
+            features_scaled
+        )[0]
+
+        confidence = probabilities[
+            prediction
+        ]
+
+        if prediction == 1:
+
             result = "AI-GENERATED"
-            confidence = prediction
-        else:
-            result = "HUMAN"
-            confidence = 1 - prediction
 
-        print(f"\n RESULT: {result}")
-        print(f" Confidence: {confidence:.2%}")
-        print(f" File: {os.path.basename(audio_path)}")
+        else:
+
+            result = "HUMAN"
+
+        print("\n----------------------------")
+
+        print(f"RESULT: {result}")
+
+        print(
+            f"Confidence: {confidence:.2%}"
+        )
+
+        print(
+            f"File: {os.path.basename(audio_path)}"
+        )
+
+        print("----------------------------")
 
         return result, confidence
 
     except Exception as e:
-        print(f" Error processing audio: {e}")
+
+        print(
+            f"Error processing audio: {e}"
+        )
+
         return None, None
 
 
+# ------------------------------------------------
+# MAIN
+# ------------------------------------------------
+
 if __name__ == "__main__":
+
     if len(sys.argv) > 1:
+
         audio_file = sys.argv[1]
+
     else:
-        audio_file = input("Enter the path to your audio file (MP3/WAV): ").strip().strip('"')
+
+        audio_file = input(
+            "Enter audio file path (MP3/WAV): "
+        ).strip().strip('"')
 
     if os.path.exists(audio_file):
-        predict_audio(audio_file)
+
+        predict_audio(
+            audio_file
+        )
+
     else:
-        print(" File not found! Please check the path.")
+
+        print(
+            "File not found! Please check the path."
+        )
