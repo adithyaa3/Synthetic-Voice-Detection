@@ -1,167 +1,71 @@
-import os
+"""Classify an audio file as human or AI-generated (thin wrapper over voicedetect.predict).
+
+    python scripts/predict.py path/to/audio.wav
+    python scripts/predict.py            # asks for a path, like the original script
+
+Exit codes: 0 = classified, 2 = input rejected (with a reason), 3 = no trained model.
+"""
 import sys
-import numpy as np
-import librosa
-import joblib
+from pathlib import Path
 
-print("=== SYNTHETIC VOICE DETECTOR - SVM PREDICTION ===")
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+try:
+    from voicedetect.audio_io import AudioError
+    from voicedetect.predict import ModelConfigMismatch, ModelNotFound, predict_file
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+    try:
+        from voicedetect.audio_io import AudioError
+        from voicedetect.predict import ModelConfigMismatch, ModelNotFound, predict_file
+    except ImportError as exc:
+        sys.exit(f"Missing dependency ({exc}). Activate the project environment first:\n"
+                 "  .venv\\Scripts\\activate   (Windows)   or   source .venv/bin/activate")
+
+VERDICT = {"human": "HUMAN", "ai": "AI-GENERATED", "inconclusive": "INCONCLUSIVE"}
 
 
-def extract_features(audio_path):
-
-    # Load first 4 seconds
-    y, sr = librosa.load(
-        audio_path,
-        sr=22050,
-        duration=4
-    )
-
-    # Extract 40 MFCCs
-    mfcc = librosa.feature.mfcc(
-        y=y,
-        sr=sr,
-        n_mfcc=40
-    )
-
-    # Mean of each MFCC
-    mfcc_mean = np.mean(
-        mfcc,
-        axis=1
-    )
-
-    # Standard deviation of each MFCC
-    mfcc_std = np.std(
-        mfcc,
-        axis=1
-    )
-
-    # Combine them
-    features = np.concatenate(
-        (mfcc_mean, mfcc_std)
-    )
-
-    return features
+def _report(r: dict) -> tuple[str, float]:
+    p = r["probability"]
+    conf = p if r["label"] in ("ai", "inconclusive") else 1 - p
+    print("\n----------------------------")
+    print(f"RESULT: {VERDICT[r['label']]}")
+    print(f"P(AI-generated): {p:.1%}   (decision threshold {r['threshold']:.2f}; "
+          f"inconclusive band {r['inconclusive_band'][0]:.2f}-{r['inconclusive_band'][1]:.2f})")
+    print(f"File: {r['file']}   windows analysed: {r['n_windows']}   model {r['model_version']}")
+    for w in r["warnings"]:
+        print(f"Note: {w}")
+    print("This is a model probability, not proof.")
+    print("----------------------------")
+    return VERDICT[r["label"]], conf
 
 
 def predict_audio(audio_path):
-
+    """Backward-compatible helper: returns (result, confidence) like the original script, where
+    confidence is the probability of the reported class (P(AI) when inconclusive); (None, None) on error."""
     try:
-
-        BASE_PATH = os.path.dirname(
-            os.path.dirname(__file__)
-        )
-
-        model_path = os.path.join(
-            BASE_PATH,
-            "models",
-            "voice_detector_svm.pkl"
-        )
-
-        scaler_path = os.path.join(
-            BASE_PATH,
-            "models",
-            "scaler.pkl"
-        )
-
-        # Load trained SVM
-        model = joblib.load(
-            model_path
-        )
-
-        # Load scaler
-        scaler = joblib.load(
-            scaler_path
-        )
-
-        print("\nProcessing audio...")
-
-        # Extract MFCC features
-        features = extract_features(
-            audio_path
-        )
-
-        # Convert to shape (1, 80)
-        features = features.reshape(
-            1,
-            -1
-        )
-
-        # Apply same scaling used during training
-        features_scaled = scaler.transform(
-            features
-        )
-
-        # Prediction
-        prediction = model.predict(
-            features_scaled
-        )[0]
-
-        # Probability
-        probabilities = model.predict_proba(
-            features_scaled
-        )[0]
-
-        confidence = probabilities[
-            prediction
-        ]
-
-        if prediction == 1:
-
-            result = "AI-GENERATED"
-
-        else:
-
-            result = "HUMAN"
-
-        print("\n----------------------------")
-
-        print(f"RESULT: {result}")
-
-        print(
-            f"Confidence: {confidence:.2%}"
-        )
-
-        print(
-            f"File: {os.path.basename(audio_path)}"
-        )
-
-        print("----------------------------")
-
-        return result, confidence
-
-    except Exception as e:
-
-        print(
-            f"Error processing audio: {e}"
-        )
-
+        return _report(predict_file(audio_path))
+    except (AudioError, ModelNotFound, ModelConfigMismatch) as exc:
+        print(f"Error processing audio: {exc}")
         return None, None
 
 
-# ------------------------------------------------
-# MAIN
-# ------------------------------------------------
+def main() -> int:
+    print("=== SYNTHETIC VOICE DETECTOR - PREDICTION ===")
+    raw = sys.argv[1] if len(sys.argv) > 1 else input("Enter audio file path (MP3/WAV): ")
+    audio_file = raw.strip().strip('"')  # tolerate pasted quotes / stray whitespace (e.g. a trailing CR)
+    try:
+        r = predict_file(audio_file)
+    except AudioError as exc:
+        print(f"Input rejected: {exc}")
+        return 2
+    except (ModelNotFound, ModelConfigMismatch) as exc:
+        print(str(exc))
+        return 3
+    _report(r)
+    return 0
+
 
 if __name__ == "__main__":
-
-    if len(sys.argv) > 1:
-
-        audio_file = sys.argv[1]
-
-    else:
-
-        audio_file = input(
-            "Enter audio file path (MP3/WAV): "
-        ).strip().strip('"')
-
-    if os.path.exists(audio_file):
-
-        predict_audio(
-            audio_file
-        )
-
-    else:
-
-        print(
-            "File not found! Please check the path."
-        )
+    sys.exit(main())

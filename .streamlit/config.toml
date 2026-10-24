@@ -1,0 +1,27 @@
+[server]
+# The uploader accepts up to 200 MB so that oversized files reach the app, which rejects anything
+# above PredictConfig.ui_max_upload_mb (50 MB) with a clear message (the widget's own rejection is
+# only a red icon on the file chip).
+maxUploadSize = 200
+headless = true
+runOnSave = false
+
+[browser]
+gatherUsageStats = false    # no telemetry / external requests
+
+[client]
+showErrorDetails = "none"   # never show stack traces to users (they go to the console)
+toolbarMode = "viewer"
+
+# Dark by default. (Defining a [theme.light] section as well makes Streamlit follow the OS setting,
+# so it is intentionally absent; viewers can still pick light mode in the settings menu.)
+[theme]
+base = "dark"
+primaryColor = "#14835c"            # white text on it: 4.74:1
+backgroundColor = "#0d0d0d"
+secondaryBackgroundColor = "#1a1a19"
+textColor = "#f0efec"
+linkColor = "#4cc59a"               # 9:1 on the page
+borderColor = "#2c2c2a"
+baseRadius = "0.6rem"
+chartCategoricalColors = ["#3987e5", "#d95926", "#199e70"]

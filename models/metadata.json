@@ -1,0 +1,163 @@
+{
+  "model_version": "2026.10.24-792b60-8fac55",
+  "created_utc": "2026-10-24T16:52:35+00:00",
+  "feature_set": "extended",
+  "feature_signature": {
+    "audio": {
+      "sample_rate": 22050,
+      "window_seconds": 4.0,
+      "max_windows_per_file": 10,
+      "min_duration_s": 1.0,
+      "trim_top_db": 35.0,
+      "active_rel_db": 30.0,
+      "min_active_fraction": 0.5,
+      "silence_dbfs": -55.0,
+      "silence_peak": 0.003,
+      "frame_length": 2048,
+      "hop_length": 512
+    },
+    "features": {
+      "feature_set": "extended",
+      "n_mfcc": 40,
+      "n_fft": 2048,
+      "hop_length": 512,
+      "n_mels": 128
+    },
+    "feature_code_version": "1"
+  },
+  "feature_signature_hash": "792b6004d60638ea",
+  "threshold": 0.64,
+  "inconclusive_halfwidth": 0.15,
+  "library_versions": {
+    "python": "3.12.8",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.0",
+    "librosa": "1.0.0",
+    "soundfile": "0.14.0",
+    "libsndfile": "1.2.2"
+  },
+  "role": "deployed model (robustness-aware augmentation choice, decided on development data)",
+  "training_setting": "combined",
+  "model_name": "hist_gb",
+  "best_params": {
+    "clf__l2_regularization": 0.0,
+    "clf__learning_rate": 0.1,
+    "clf__max_leaf_nodes": 15
+  },
+  "augmentation": [
+    "mp3cv"
+  ],
+  "calibration": "sigmoid",
+  "seed": 42,
+  "cv": {
+    "outer": 5,
+    "inner": 3,
+    "type": "StratifiedGroupKFold"
+  },
+  "data_manifest_hash": "a6538f12e5cfda6e",
+  "feature_cache_key": "f77b4d4e1537994f",
+  "training_windows": 1680,
+  "training_files": 1282,
+  "training_groups": 91,
+  "training_windows_by_source": {
+    "asvspoof2019_la/ai": 346,
+    "asvspoof2019_la/human": 450,
+    "user_commonvoice/human": 464,
+    "user_voice_conversion/ai": 420
+  },
+  "cv_metrics": {
+    "accuracy_mean": 0.9000720623370742,
+    "accuracy_std": 0.026354249711600896,
+    "balanced_accuracy_mean": 0.8962441376029971,
+    "balanced_accuracy_std": 0.026535367499221883,
+    "precision_mean": 0.9082479230276048,
+    "precision_std": 0.04296502230555136,
+    "recall_mean": 0.8680325724682343,
+    "recall_std": 0.05789820633373227,
+    "specificity_mean": 0.9244557027377599,
+    "specificity_std": 0.03880535986463559,
+    "f1_mean": 0.8863794025160094,
+    "f1_std": 0.03349913107228027,
+    "roc_auc_mean": 0.9657843960046565,
+    "roc_auc_std": 0.017388875741417176,
+    "pr_auc_mean": 0.9645177353267954,
+    "pr_auc_std": 0.018079597637762963,
+    "brier_mean": 0.08337758646725713,
+    "brier_std": 0.020916699080342254,
+    "log_loss_mean": 0.3817439738215237,
+    "log_loss_std": 0.11421663781949441,
+    "ece_mean": 0.07793705813054297,
+    "ece_std": 0.01698213874015654,
+    "roc_auc_mp3_mean": 0.9149584715896271,
+    "roc_auc_mp3_std": 0.04857657574397706,
+    "balanced_accuracy_mp3_mean": 0.8043516150051342,
+    "balanced_accuracy_mp3_std": 0.04505016289902147,
+    "recall_mp3_mean": 0.6585143975449123,
+    "recall_mp3_std": 0.10423160005717547,
+    "specificity_mp3_mean": 0.9501888324653563,
+    "specificity_mp3_std": 0.019613749326559897
+  },
+  "cv_metrics_note": "clean-data nested CV of this model family / features without augmentation",
+  "calibration_selection": {
+    "methods": {
+      "none": {
+        "log_loss_mean": 0.39638483611508996,
+        "brier_mean": 0.09232260258240273,
+        "ece_mean": 0.08141440038507046,
+        "roc_auc_mean": 0.9608105208188803,
+        "pooled_ece": 0.07320471883923915
+      },
+      "sigmoid": {
+        "log_loss_mean": 0.26790893262890075,
+        "brier_mean": 0.08101938350480893,
+        "ece_mean": 0.062468048068971216,
+        "roc_auc_mean": 0.9608105208188803,
+        "pooled_ece": 0.03310250060931838
+      },
+      "isotonic": {
+        "log_loss_mean": 0.29299297040626726,
+        "brier_mean": 0.08392320869617359,
+        "ece_mean": 0.06837086813547429,
+        "roc_auc_mean": 0.9581539364118816,
+        "pooled_ece": 0.030901495751901133
+      }
+    },
+    "chosen_method": "sigmoid"
+  },
+  "dev_robustness_at_threshold": {
+    "clean": {
+      "roc_auc": 0.9573018493866802,
+      "balanced_accuracy": 0.8799769755071958,
+      "recall": 0.8080939947780679,
+      "specificity": 0.9518599562363238
+    },
+    "mp3": {
+      "roc_auc": 0.9458324525369792,
+      "balanced_accuracy": 0.847321331649822,
+      "recall": 0.7493472584856397,
+      "specificity": 0.9452954048140044
+    },
+    "white20": {
+      "roc_auc": 0.6387175700304517,
+      "balanced_accuracy": 0.5088769989316179,
+      "recall": 0.9947780678851175,
+      "specificity": 0.022975929978118162
+    },
+    "room20": {
+      "roc_auc": 0.6778513520462089,
+      "balanced_accuracy": 0.5069002062491788,
+      "recall": 0.9973890339425587,
+      "specificity": 0.016411378555798686
+    },
+    "mic": {
+      "roc_auc": 0.6132078031891494,
+      "balanced_accuracy": 0.5122335472002102,
+      "recall": 0.9686684073107049,
+      "specificity": 0.05579868708971553
+    }
+  },
+  "decision_costs": {
+    "false_alarm": 2.0,
+    "miss": 1.0
+  }
+}

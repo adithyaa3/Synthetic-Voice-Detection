@@ -1,0 +1,1516 @@
+{
+  "generated_utc": "2026-10-24T19:37:22+00:00",
+  "files_total": 2126,
+  "files_per_class": {
+    "human": 1385,
+    "ai": 741
+  },
+  "files_per_source": {
+    "asvspoof2019_la": 1465,
+    "user_commonvoice": 605,
+    "user_voice_conversion": 56
+  },
+  "per_source": {
+    "asvspoof2019_la": {
+      "files": 1465,
+      "class": [
+        "ai",
+        "human"
+      ],
+      "origin": "public",
+      "formats": {
+        ".flac": 1465
+      },
+      "sample_rates": {
+        "16000": 1465
+      },
+      "channels": {
+        "1": 1465
+      },
+      "duration_s": {
+        "min": 0.699,
+        "p25": 2.442,
+        "median": 3.156,
+        "mean": 3.331,
+        "p75": 4.008,
+        "max": 11.169
+      },
+      "trimmed_duration_s": {
+        "min": 1.022,
+        "p25": 1.556,
+        "median": 2.02,
+        "mean": 2.289,
+        "p75": 2.67,
+        "max": 10.82
+      },
+      "rms_dbfs": {
+        "min": -26.487,
+        "p25": -20.091,
+        "median": -18.661,
+        "mean": -18.643,
+        "p75": -17.172,
+        "max": -12.574
+      },
+      "unreadable": [],
+      "rejected_by_loader": [
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_1056334.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_1223641.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_1336215.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_1432574.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_1775562.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_2139125.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_2389222.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_2468278.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_3155945.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_4131292.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_4399522.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_4773088.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_5656029.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_6008941.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_6710190.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_7176973.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_7333352.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_7394528.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_7455119.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_8863378.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_9239572.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_9410996.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_9756382.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_D_9843427.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_1198781.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_1250691.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_1901872.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_1967139.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2000638.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2022884.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2217249.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2329670.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2540374.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2553182.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2636404.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2770600.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2859944.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2861430.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_2993825.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_3110493.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_3284599.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_3420489.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_3462298.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_4025699.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_4397796.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_4493422.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_4806206.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_4845619.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_5003508.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_5077196.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_5585566.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_5739678.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_5895130.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_6008385.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_6116953.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_6231208.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_6254796.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_6342578.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_6759806.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_7447513.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_8012752.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_8590949.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_8666909.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_9057190.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_9112206.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_9720805.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_E_9904242.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_1525143.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_1702062.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_1867363.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_1933449.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_2299372.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_2583025.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_3012152.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_4043474.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_4270225.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_5034418.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_5288751.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_6379215.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_6766056.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_6979109.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_7201521.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_7500588.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_7676772.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_8032109.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_8095132.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_8415843.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_8516572.flac",
+          "too_short"
+        ],
+        [
+          "data/supplementary/asvspoof2019_la/flac/LA_T_9248363.flac",
+          "too_short"
+        ]
+      ],
+      "near_silent": [],
+      "very_short": [
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1056334.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1131723.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1144331.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1223641.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1281285.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1336215.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1364611.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1413701.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1432574.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1469404.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1553644.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1775562.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1792486.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1847022.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_1911275.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2112837.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2139125.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2242311.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2250508.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2289857.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2389222.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2445554.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2468278.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2473130.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2639273.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2731741.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2736752.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2824820.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2839913.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2927307.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_2975559.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3044060.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3065174.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3116504.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3155945.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3170420.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3206137.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3232533.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3239072.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3327924.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3352195.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3495492.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3548515.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3553954.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3571831.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3603496.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3631905.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3656100.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3660282.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3668484.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3697262.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3712860.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3714679.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3774137.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3810542.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_3981584.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4004968.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4021153.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4043306.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4052746.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4059408.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4076814.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4129574.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4131292.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4169471.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4274975.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4328579.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4337768.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4371142.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4372487.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4399522.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4492847.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4494554.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4517588.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4586853.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4699929.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4747124.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4759329.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4773088.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4811625.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4842833.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4934804.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_4979666.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5056218.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5115522.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5162129.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5185995.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5192013.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5248372.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5278285.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5349360.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5372085.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5386683.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5621016.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5656029.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5679718.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5806611.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5824998.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5841267.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_5972086.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6008941.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6013126.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6032630.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6197289.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6220480.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6266231.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6266806.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6310267.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6332014.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6343761.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6373250.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6380295.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6439730.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6499924.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6503475.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6518159.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6579134.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6659622.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6679303.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6710190.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6733447.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6741986.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6842136.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6848115.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6876630.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6935031.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_6965307.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7127063.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7176973.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7219426.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7253146.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7272195.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7277373.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7333352.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7370306.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7370520.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7394528.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7455119.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7467158.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7496196.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7551361.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7651671.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7712846.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7715110.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7751131.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7861399.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7883377.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7918292.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_7933208.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8117787.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8124968.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8127075.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8140433.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8239123.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8361964.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8436513.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8456544.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8494760.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8639820.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8653096.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8697996.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8700255.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8705922.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8718165.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8817568.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8863378.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8869959.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_8988945.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9006057.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9041455.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9113299.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9137331.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9196907.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9239572.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9300277.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9366582.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9410996.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9433165.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9508907.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9513156.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9615748.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9678576.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9716462.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9756382.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9835881.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9843427.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_D_9948386.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1039348.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1144268.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1159112.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1198781.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1236391.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1250691.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1376222.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1453638.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1498145.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1506004.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1523827.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1558666.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1609285.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1614373.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1664004.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1704872.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1719655.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1796765.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1820128.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1835000.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1892199.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1901872.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1952207.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1961987.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1967139.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_1973613.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2000638.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2022884.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2035261.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2089512.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2163149.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2217249.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2259870.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2329670.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2343790.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2378020.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2406048.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2409961.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2483996.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2494484.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2520247.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2522776.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2540374.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2553182.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2611313.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2616671.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2623818.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2636404.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2655033.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2696168.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2703777.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2723580.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2749499.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2749866.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2755057.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2756633.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2770600.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2775122.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2818179.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2823758.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2859944.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2861430.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2875225.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2878991.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2896883.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2921544.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2950419.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2960240.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_2993825.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3007897.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3029235.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3056779.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3066031.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3068013.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3104280.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3110493.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3115484.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3131403.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3136426.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3141618.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3145588.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3173049.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3187685.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3223344.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3271208.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3284599.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3346353.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3375650.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3406858.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3420489.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3462298.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3486569.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3495362.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3495999.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3541000.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3593331.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3622738.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3648218.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3656958.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3691565.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3724877.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3739766.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3741943.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3754241.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3788286.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3812190.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3829556.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3830566.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3852745.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3915728.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3957430.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3975772.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_3976671.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4025699.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4135438.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4138548.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4154190.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4188914.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4230786.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4272102.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4320640.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4321015.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4382348.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4397796.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4411806.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4438054.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4443804.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4480075.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4482543.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4493422.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4498530.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4534601.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4553473.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4597665.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4683238.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4693993.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4704046.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4710355.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4771572.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4782185.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4806206.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4839707.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4844179.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4845619.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4893921.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4897771.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4928245.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_4978188.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5003508.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5011659.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5034602.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5062887.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5077196.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5151900.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5180963.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5194251.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5215784.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5225016.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5238212.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5272368.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5364953.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5408013.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5414767.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5418694.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5437596.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5462994.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5479759.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5535698.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5558962.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5585566.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5595972.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5601474.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5639913.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5652192.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5694987.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5731449.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5739678.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5763952.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5780087.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5784662.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5784781.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5844041.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5874636.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5877330.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5895130.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5906664.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5925697.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5928674.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5954175.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_5990674.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6008385.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6040092.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6079260.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6097708.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6110022.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6116953.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6155923.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6167853.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6171987.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6193311.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6197004.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6231208.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6254796.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6261281.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6265787.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6298771.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6342578.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6366522.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6388527.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6420394.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6471275.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6488763.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6515051.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6525601.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6540743.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6568700.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6575508.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6581680.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6599538.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6708601.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6723615.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6759806.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6812580.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6821727.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6888840.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6918566.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6918683.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6970087.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_6985607.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7012733.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7086367.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7107684.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7167069.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7286405.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7304378.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7321687.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7335424.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7443048.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7447513.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7452232.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7457630.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7466834.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7501127.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7504000.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7521031.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7547588.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7563039.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7584998.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7645896.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7775931.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7780994.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7812706.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7850213.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7858055.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7869018.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7879827.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7888485.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7926568.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7933041.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7966136.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7970024.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_7975120.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8003395.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8012752.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8026621.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8051355.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8051469.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8063150.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8080768.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8110347.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8234826.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8267790.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8272834.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8281791.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8290668.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8344224.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8347209.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8384869.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8414574.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8436175.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8447482.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8550757.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8563944.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8590949.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8611757.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8623717.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8645547.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8657220.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8665018.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8666909.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8712213.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8881352.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_8893178.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9031863.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9057190.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9069661.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9082372.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9088851.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9102181.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9112206.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9165036.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9166892.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9173486.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9183713.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9213555.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9239657.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9282182.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9299157.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9301504.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9305857.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9354187.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9384067.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9394463.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9396300.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9405294.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9417977.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9441902.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9460849.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9482564.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9503493.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9530072.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9580184.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9688955.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9703326.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9720805.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9738502.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9771425.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9811273.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9839751.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9866308.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9894477.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9900417.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9904242.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9905727.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9906132.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9912175.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9913850.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9931094.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_E_9967663.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1049021.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1130675.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1130893.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1151489.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1152870.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1235793.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1284700.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1302087.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1303836.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1312618.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1377264.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1388582.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1415307.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1439422.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1459702.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1467964.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1495245.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1505792.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1518499.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1525143.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1531506.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1539313.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1544986.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1622807.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1671516.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1702062.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1736342.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1740931.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1836557.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1846342.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1867363.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1933449.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1938160.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1970201.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_1991708.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2039830.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2058362.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2071606.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2074796.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2089894.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2092466.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2111302.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2123366.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2152627.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2195795.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2198931.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2228293.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2297014.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2299372.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2424150.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2439075.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2450169.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2492466.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2522205.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2539186.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2542674.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2545938.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2547007.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2583025.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2646474.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2706454.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2720285.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2824772.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_2875055.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3003983.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3012152.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3074578.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3077534.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3093797.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3104807.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3163159.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3167085.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3191074.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3208992.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3230541.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3265095.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3288573.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3306464.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3376738.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3396974.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3425152.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3452222.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3486820.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3502941.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3505871.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3525725.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3529678.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3551277.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3609067.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3625664.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3638294.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3688882.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3695441.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3697922.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3748161.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_3778213.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4043474.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4044337.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4160149.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4237787.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4270225.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4298489.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4384840.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4397800.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4452112.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4546797.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4557107.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4559826.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4566714.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4657357.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4692321.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4710044.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4710920.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4711197.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4768074.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4774898.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4801202.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4893773.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4914706.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4922198.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_4925419.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5015893.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5034418.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5049541.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5073215.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5140325.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5148524.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5192765.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5193056.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5204759.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5220491.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5274567.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5288751.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5391052.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5400219.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5416411.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5424848.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5427599.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5497895.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5539475.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5553342.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5591940.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5633732.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5675135.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5727134.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5835863.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5847784.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5855384.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5914505.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_5994708.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6102228.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6110354.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6212674.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6227496.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6269397.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6379215.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6493474.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6529574.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6594586.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6620806.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6657623.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6672123.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6736628.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6766056.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6774071.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6774634.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6915932.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6979109.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_6982603.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7034456.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7084634.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7146737.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7166202.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7201521.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7223058.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7236882.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7279842.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7480399.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7500588.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7535541.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7555561.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7597238.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7676772.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7683892.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7696598.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7835937.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7839297.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7853414.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7860196.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7891512.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7944475.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7969450.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7980821.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_7985597.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8032109.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8083537.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8091884.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8095132.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8097328.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8100382.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8111589.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8140876.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8162147.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8167807.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8232782.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8243493.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8268389.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8274240.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8371319.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8372878.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8393267.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8413557.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8415843.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8421122.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8423394.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8458947.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8475651.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8508520.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8516572.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8578710.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8624648.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8682959.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8683526.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8743783.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8820715.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8956752.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_8993559.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9022965.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9029058.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9068162.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9190580.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9248363.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9293135.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9323726.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9351820.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9456188.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9508923.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9526706.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9560564.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9605518.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9678657.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9803057.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9803720.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9834341.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9897034.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9949256.flac",
+        "data/supplementary/asvspoof2019_la/flac/LA_T_9971213.flac"
+      ],
+      "groups": 107,
+      "group_basis": "ASVspoof 2019 protocol speaker ID",
+      "group_confidence": "high",
+      "group_size": {
+        "min": 2.0,
+        "p25": 8.0,
+        "median": 12.0,
+        "mean": 13.692,
+        "p75": 20.0,
+        "max": 30.0
+      },
+      "generators": {
+        "human": 780,
+        "A01": 60,
+        "A03": 60,
+        "A06": 60,
+        "A04": 60,
+        "A02": 60,
+        "A05": 60,
+        "A14": 25,
+        "A15": 25,
+        "A13": 25,
+        "A19": 25,
+        "A09": 25,
+        "A08": 25,
+        "A17": 25,
+        "A10": 25,
+        "A16": 25,
+        "A07": 25,
+        "A11": 25,
+        "A12": 25,
+        "A18": 25
+      },
+      "windows_total": 1380,
+      "partition_files": {
+        "dev": 840,
+        "test": 625
+      }
+    },
+    "user_commonvoice": {
+      "files": 605,
+      "class": [
+        "human"
+      ],
+      "origin": "user",
+      "formats": {
+        ".mp3": 605
+      },
+      "sample_rates": {
+        "32000": 605
+      },
+      "channels": {
+        "1": 605
+      },
+      "duration_s": {
+        "min": 1.268,
+        "p25": 5.083,
+        "median": 6.128,
+        "mean": 6.277,
+        "p75": 7.244,
+        "max": 15.236
+      },
+      "trimmed_duration_s": {
+        "min": 1.214,
+        "p25": 4.087,
+        "median": 5.085,
+        "mean": 5.216,
+        "p75": 6.113,
+        "max": 14.327
+      },
+      "rms_dbfs": {
+        "min": -88.299,
+        "p25": -25.719,
+        "median": -23.749,
+        "mean": -24.229,
+        "p75": -21.756,
+        "max": -8.24
+      },
+      "unreadable": [],
+      "rejected_by_loader": [
+        [
+          "data/human/common_voice_en_42696403.mp3",
+          "too_short"
+        ],
+        [
+          "data/human/common_voice_en_42700013.mp3",
+          "silent"
+        ],
+        [
+          "data/human/common_voice_en_42700014.mp3",
+          "silent"
+        ],
+        [
+          "data/human/common_voice_en_42708022.mp3",
+          "silent"
+        ],
+        [
+          "data/human/common_voice_en_42710607.mp3",
+          "too_short"
+        ]
+      ],
+      "near_silent": [
+        "data/human/common_voice_en_42700013.mp3",
+        "data/human/common_voice_en_42700014.mp3",
+        "data/human/common_voice_en_42708022.mp3",
+        "data/human/common_voice_en_42708594.mp3",
+        "data/human/common_voice_en_42709332.mp3",
+        "data/human/common_voice_en_42710607.mp3"
+      ],
+      "very_short": [
+        "data/human/common_voice_en_42696168.mp3",
+        "data/human/common_voice_en_42696169.mp3",
+        "data/human/common_voice_en_42696403.mp3",
+        "data/human/common_voice_en_42699931.mp3",
+        "data/human/common_voice_en_42700013.mp3",
+        "data/human/common_voice_en_42700014.mp3",
+        "data/human/common_voice_en_42703213.mp3",
+        "data/human/common_voice_en_42703813.mp3",
+        "data/human/common_voice_en_42706043.mp3",
+        "data/human/common_voice_en_42706122.mp3",
+        "data/human/common_voice_en_42707049.mp3",
+        "data/human/common_voice_en_42708022.mp3",
+        "data/human/common_voice_en_42710607.mp3",
+        "data/human/common_voice_en_42711914.mp3",
+        "data/human/common_voice_en_42713218.mp3"
+      ],
+      "groups": 56,
+      "group_basis": "Common Voice clip-ID run (gap<=5)",
+      "group_confidence": "low-medium",
+      "group_size": {
+        "min": 1.0,
+        "p25": 5.0,
+        "median": 5.0,
+        "mean": 10.804,
+        "p75": 5.0,
+        "max": 98.0
+      },
+      "generators": {
+        "human": 605
+      },
+      "windows_total": 624,
+      "partition_files": {
+        "dev": 451,
+        "test": 154
+      }
+    },
+    "user_voice_conversion": {
+      "files": 56,
+      "class": [
+        "ai"
+      ],
+      "origin": "user",
+      "formats": {
+        ".wav": 56
+      },
+      "sample_rates": {
+        "44100": 52,
+        "40000": 4
+      },
+      "channels": {
+        "2": 56
+      },
+      "duration_s": {
+        "min": 79.487,
+        "p25": 451.191,
+        "median": 600.0,
+        "mean": 467.942,
+        "p75": 600.0,
+        "max": 600.0
+      },
+      "trimmed_duration_s": {
+        "min": 79.134,
+        "p25": 451.099,
+        "median": 599.748,
+        "mean": 467.787,
+        "p75": 599.977,
+        "max": 600.0
+      },
+      "rms_dbfs": {
+        "min": -37.806,
+        "p25": -25.153,
+        "median": -22.493,
+        "mean": -24.014,
+        "p75": -21.305,
+        "max": -17.149
+      },
+      "unreadable": [],
+      "rejected_by_loader": [],
+      "near_silent": [],
+      "very_short": [],
+      "groups": 8,
+      "group_basis": "source speaker in filename (identical durations confirm shared source recording)",
+      "group_confidence": "high",
+      "group_size": {
+        "min": 7.0,
+        "p25": 7.0,
+        "median": 7.0,
+        "mean": 7.0,
+        "p75": 7.0,
+        "max": 7.0
+      },
+      "generators": {
+        "user_vc": 56
+      },
+      "windows_total": 560,
+      "partition_files": {
+        "dev": 42,
+        "test": 14
+      }
+    }
+  },
+  "exact_duplicates": [],
+  "unreadable_total": 0,
+  "rejected_by_loader_total": 94,
+  "group_inference": {
+    "user_voice_conversion": {
+      "basis": "filename '<source>-to-<target>'; group = source speaker",
+      "distinct_durations_per_source_group": {
+        "vc_src_biden": 1,
+        "vc_src_linus": 1,
+        "vc_src_margot": 1,
+        "vc_src_musk": 1,
+        "vc_src_obama": 1,
+        "vc_src_ryan": 1,
+        "vc_src_taylor": 1,
+        "vc_src_trump": 1
+      },
+      "interpretation": "1 distinct duration per source => the 7 conversions of a source are re-voicings of the same recording",
+      "source_speakers": [
+        "biden",
+        "linus",
+        "margot",
+        "musk",
+        "obama",
+        "ryan",
+        "taylor",
+        "trump"
+      ],
+      "target_voices": [
+        "biden",
+        "linus",
+        "margot",
+        "musk",
+        "obama",
+        "ryan",
+        "taylor",
+        "trump"
+      ],
+      "confidence": "high (filename pattern + identical durations); generator tool unknown, assumed single"
+    },
+    "user_commonvoice": {
+      "basis": "runs of near-consecutive clip IDs (gap <= 5); Common Voice records in batches of 5",
+      "coherence_check": {
+        "n_clips": 600,
+        "n_groups": 54,
+        "nearest_neighbour_same_group": 0.87,
+        "chance_level": 0.085,
+        "clips_whose_nearest_neighbour_is_in_another_group": 78
+      },
+      "confidence": "low-medium (no client_id metadata; one speaker may span several runs)"
+    },
+    "asvspoof2019_la": {
+      "basis": "official protocol speaker IDs and attack system IDs",
+      "confidence": "high"
+    }
+  },
+  "adequacy": {
+    "user_only": {
+      "dataset": "user data only",
+      "files_human": 605,
+      "files_ai": 56,
+      "independent_groups_human": 56,
+      "independent_groups_ai": 8,
+      "ai_generators": [
+        "user_vc"
+      ],
+      "checks": {
+        "both_classes_present": true,
+        ">=100_independent_human_units": true,
+        ">=100_independent_ai_units": false,
+        "more_than_one_ai_generator": false,
+        "more_than_one_human_speaker_or_condition": true,
+        "file_level_class_ratio_within_1:3": false,
+        "no_exact_duplicates": true
+      },
+      "adequate": false
+    },
+    "user_plus_supplementary": {
+      "dataset": "user + supplementary",
+      "files_human": 1385,
+      "files_ai": 741,
+      "independent_groups_human": 163,
+      "independent_groups_ai": 86,
+      "ai_generators": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17",
+        "A18",
+        "A19",
+        "user_vc"
+      ],
+      "checks": {
+        "both_classes_present": true,
+        ">=100_independent_human_units": true,
+        ">=100_independent_ai_units": false,
+        "more_than_one_ai_generator": true,
+        "more_than_one_human_speaker_or_condition": true,
+        "file_level_class_ratio_within_1:3": true,
+        "no_exact_duplicates": true
+      },
+      "adequate": false
+    }
+  }
+}

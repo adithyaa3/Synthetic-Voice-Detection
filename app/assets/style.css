@@ -1,0 +1,37 @@
+/* Small, deliberate overrides on top of the Streamlit theme in .streamlit/config.toml */
+.block-container { padding-top: 2.2rem; padding-bottom: 4rem; max-width: 1240px; }
+h1 { letter-spacing: -0.01em; }
+.vd-sub { color: var(--vd-muted, #a3a19a); font-size: 1.02rem; margin-top: -0.6rem; max-width: 75ch; }
+p, li { max-width: 80ch; }
+
+/* Visible keyboard focus for every interactive element */
+a:focus-visible, button:focus-visible, [role="tab"]:focus-visible, [role="radio"]:focus-visible,
+input:focus-visible, textarea:focus-visible, [role="slider"]:focus-visible, summary:focus-visible,
+[data-baseweb="select"] *:focus-visible {
+  outline: 2px solid #4cc59a !important; outline-offset: 2px !important; border-radius: 4px;
+}
+
+/* Bordered metric tiles: keep values readable, never clipped */
+[data-testid="stMetricValue"] { font-size: 1.7rem; white-space: normal; overflow-wrap: anywhere; }
+[data-testid="stMetricLabel"] p { font-size: 0.86rem; }
+
+/* Verdict card on the live page: colour is only the left stripe + dot; text stays in ink colours */
+.vd-verdict { border: 1px solid var(--vd-border); border-left: 6px solid var(--vd-stripe); border-radius: 10px;
+  padding: 16px 18px; background: var(--vd-surface); margin: 6px 0 12px; }
+.vd-verdict .vd-kicker { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--vd-muted); }
+.vd-verdict .vd-label { font-size: 1.9rem; font-weight: 650; line-height: 1.2; margin: 2px 0 4px; color: var(--vd-ink); }
+.vd-verdict .vd-dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--vd-stripe);
+  margin-right: 10px; vertical-align: middle; }
+.vd-verdict .vd-detail { color: var(--vd-ink2); font-size: 0.98rem; }
+
+.vd-note { border-left: 3px solid #14835c; padding: 6px 12px; margin: 8px 0; color: var(--vd-ink2, inherit); }
+
+/* Tables: tabular figures */
+[data-testid="stDataFrame"] { font-variant-numeric: tabular-nums; }
+
+/* Narrow screens: tighten paddings so nothing overflows */
+@media (max-width: 640px) {
+  .block-container { padding-left: 1rem; padding-right: 1rem; padding-top: 1.2rem; }
+  h1 { font-size: 1.7rem !important; }
+  .vd-verdict .vd-label { font-size: 1.5rem; }
+}

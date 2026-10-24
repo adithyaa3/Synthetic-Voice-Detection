@@ -1,0 +1,131 @@
+{
+  "config": {
+    "setting": "combined",
+    "model": "hist_gb",
+    "feature_set": "extended",
+    "roc_auc_mean": 0.9657843960046565,
+    "roc_auc_std": 0.017388875741417176
+  },
+  "candidates": [
+    {
+      "candidate": "none",
+      "augmentations": [],
+      "auc_by_condition": {
+        "clean": 0.9657843960046565,
+        "mp3": 0.9149584715896271,
+        "white20": 0.6257825380005365,
+        "room20": 0.6872396961808069,
+        "mic": 0.6361204738279422
+      },
+      "robust_auc": 0.7659771151207139,
+      "specificity_at_0.5_by_condition": {
+        "clean": 0.9244557027377599,
+        "mp3": 0.9501888324653563,
+        "white20": 0.0042564029998584975,
+        "room20": 0.005235602094240838,
+        "mic": 0.06360596665478557
+      },
+      "recall_at_0.5_by_condition": {
+        "clean": 0.8680325724682343,
+        "mp3": 0.6585143975449124,
+        "white20": 1.0,
+        "room20": 0.9986577181208054,
+        "mic": 0.9548017992495547
+      }
+    },
+    {
+      "candidate": "mp3",
+      "augmentations": [
+        "mp3cv"
+      ],
+      "auc_by_condition": {
+        "clean": 0.9608105208188803,
+        "mp3": 0.946762174369254,
+        "white20": 0.666860843429258,
+        "room20": 0.7158626799625404,
+        "mic": 0.6289519939432415
+      },
+      "robust_auc": 0.783849642504635,
+      "specificity_at_0.5_by_condition": {
+        "clean": 0.8972471167857183,
+        "mp3": 0.8854050510114352,
+        "white20": 0.009696237952379717,
+        "room20": 0.005269562756473752,
+        "mic": 0.01745804836350985
+      },
+      "recall_at_0.5_by_condition": {
+        "clean": 0.8733719389840715,
+        "mp3": 0.829965143893587,
+        "white20": 0.9986577181208054,
+        "room20": 0.9973154362416107,
+        "mic": 0.9935146324921295
+      }
+    },
+    {
+      "candidate": "noise+mic",
+      "augmentations": [
+        "aug_noise",
+        "aug_mic"
+      ],
+      "auc_by_condition": {
+        "clean": 0.9363122870715687,
+        "mp3": 0.9088088998166711,
+        "white20": 0.835500651903083,
+        "room20": 0.8708385056790355,
+        "mic": 0.8474260084624611
+      },
+      "robust_auc": 0.879777270586564,
+      "specificity_at_0.5_by_condition": {
+        "clean": 0.9186961312519456,
+        "mp3": 0.9387502947367417,
+        "white20": 0.7632226634561643,
+        "room20": 0.7737716690434301,
+        "mic": 0.740066620605765
+      },
+      "recall_at_0.5_by_condition": {
+        "clean": 0.7908268043373681,
+        "mp3": 0.6591236274660666,
+        "white20": 0.7224316851457303,
+        "room20": 0.7950388116210523,
+        "mic": 0.7916501343631743
+      }
+    },
+    {
+      "candidate": "mp3+noise+mic",
+      "augmentations": [
+        "mp3cv",
+        "aug_noise",
+        "aug_mic"
+      ],
+      "auc_by_condition": {
+        "clean": 0.9359561037191177,
+        "mp3": 0.9276294337925675,
+        "white20": 0.8343680651832301,
+        "room20": 0.8643127488554931,
+        "mic": 0.8380438992760473
+      },
+      "robust_auc": 0.8800620501652912,
+      "specificity_at_0.5_by_condition": {
+        "clean": 0.8889545237725909,
+        "mp3": 0.8936320811400922,
+        "white20": 0.7608856456390121,
+        "room20": 0.7693784856248741,
+        "mic": 0.7236489941236128
+      },
+      "recall_at_0.5_by_condition": {
+        "clean": 0.8066097219355811,
+        "mp3": 0.7788392522985438,
+        "white20": 0.7230154805662311,
+        "room20": 0.7767464790516427,
+        "mic": 0.7773813418648221
+      }
+    }
+  ],
+  "chosen": "mp3",
+  "chosen_augmentations": [
+    "mp3cv"
+  ],
+  "rule": "Maximise mean validation ROC-AUC over conditions ['clean', 'mp3', 'white20', 'room20', 'mic'] (validation windows perturbed; development data only), among candidates whose clean AUC is within 0.02 of no augmentation; candidates within 0.002 of the best are tied and the one with fewer augmentation types wins. Augmented copies are used in training folds only.",
+  "motivation": "The test-set robustness analysis of the model chosen by the clean-data rule showed that added noise or microphone-like processing made it label almost all human speech as AI. This study was run afterwards, so the deployed model's test results are post-hoc (see VERIFICATION_REPORT).",
+  "hyperparameters": "per-fold values from the clean inner search (not re-tuned); the final model is re-tuned"
+}

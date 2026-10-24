@@ -1,0 +1,23 @@
+{
+  "ASVspoof 2019 LA": {
+    "n_windows": 796,
+    "max_single_feature_auc": 0.7110147719974309,
+    "best_feature": "ddmfcc05_std",
+    "features_auc_ge_0.90": 0,
+    "features_auc_ge_0.95": 0
+  },
+  "user data (as stored)": {
+    "n_windows": 884,
+    "max_single_feature_auc": 0.9710385878489327,
+    "best_feature": "contrast5_std",
+    "features_auc_ge_0.90": 8,
+    "features_auc_ge_0.95": 2
+  },
+  "user data (codec-matched)": {
+    "n_windows": 884,
+    "max_single_feature_auc": 0.970304802955665,
+    "best_feature": "contrast6_mean",
+    "features_auc_ge_0.90": 1,
+    "features_auc_ge_0.95": 1
+  }
+}

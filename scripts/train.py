@@ -1,235 +1,60 @@
-import os
-import numpy as np
-import librosa
-import joblib
-
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-
-print("=== SYNTHETIC VOICE DETECTOR - SVM TRAINING ===")
-
-BASE_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
-HUMAN_PATH = os.path.join(BASE_PATH, "human")
-AI_PATH = os.path.join(BASE_PATH, "ai")
-
-MODEL_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(__file__)),
-    "models"
-)
-
-
-def extract_features(audio_path):
-    """
-    Extract MFCC features from an audio file.
-    Returns one fixed-length feature vector.
-    """
-
-    # Load first 4 seconds of audio at 22050 Hz
-    y, sr = librosa.load(
-        audio_path,
-        sr=22050,
-        duration=4
-    )
-
-    # Extract 40 MFCC coefficients
-    mfcc = librosa.feature.mfcc(
-        y=y,
-        sr=sr,
-        n_mfcc=40
-    )
-
-    # Each MFCC changes over time.
-    # Taking mean gives one value per coefficient.
-    mfcc_mean = np.mean(mfcc, axis=1)
-
-    # Standard deviation gives additional information
-    mfcc_std = np.std(mfcc, axis=1)
-
-    # Combine mean + std
-    # 40 + 40 = 80 features
-    features = np.concatenate((mfcc_mean, mfcc_std))
-
-    return features
-
-
-def load_dataset():
-
-    print("Loading audio files...")
-
-    features = []
-    labels = []
-
-    # ---------------- HUMAN AUDIO ----------------
-    for file in os.listdir(HUMAN_PATH):
-
-        if file.lower().endswith((".wav", ".mp3")):
-
-            try:
-                audio_path = os.path.join(HUMAN_PATH, file)
-
-                feature_vector = extract_features(audio_path)
-
-                features.append(feature_vector)
-
-                # Human = 0
-                labels.append(0)
-
-                print(f"✓ Loaded Human: {file}")
-
-            except Exception as e:
-                print(f"✗ Error loading {file}: {e}")
-
-    # ---------------- AI AUDIO ----------------
-    for file in os.listdir(AI_PATH):
-
-        if file.lower().endswith((".wav", ".mp3")):
-
-            try:
-                audio_path = os.path.join(AI_PATH, file)
-
-                feature_vector = extract_features(audio_path)
-
-                features.append(feature_vector)
-
-                # AI = 1
-                labels.append(1)
-
-                print(f"✓ Loaded AI: {file}")
-
-            except Exception as e:
-                print(f"✗ Error loading {file}: {e}")
-
-    return np.array(features), np.array(labels)
-
-
-# ------------------------------------------------
-# STEP 1 - LOAD DATA
-# ------------------------------------------------
-
-print("\nStep 1: Extracting MFCC features...")
-
-X, y = load_dataset()
-
-print("\nDataset shape:", X.shape)
-print("Human samples:", np.sum(y == 0))
-print("AI samples:", np.sum(y == 1))
-
-
-# ------------------------------------------------
-# STEP 2 - TRAIN TEST SPLIT
-# ------------------------------------------------
-
-print("\nStep 2: Splitting dataset...")
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42,
-    stratify=y
-)
-
-
-# ------------------------------------------------
-# STEP 3 - FEATURE SCALING
-# ------------------------------------------------
-
-print("\nStep 3: Scaling features...")
-
-scaler = StandardScaler()
-
-X_train_scaled = scaler.fit_transform(X_train)
-
-X_test_scaled = scaler.transform(X_test)
-
-
-# ------------------------------------------------
-# STEP 4 - BUILD SVM MODEL
-# ------------------------------------------------
-
-print("\nStep 4: Building SVM model...")
-
-model = SVC(
-    kernel="rbf",
-    C=10,
-    gamma="scale",
-    probability=True
-)
-
-
-# ------------------------------------------------
-# STEP 5 - TRAIN MODEL
-# ------------------------------------------------
-
-print("\nStep 5: Training SVM...")
-
-model.fit(
-    X_train_scaled,
-    y_train
-)
-
-print("Training completed!")
-
-
-# ------------------------------------------------
-# STEP 6 - TEST MODEL
-# ------------------------------------------------
-
-print("\nStep 6: Evaluating model...")
-
-y_pred = model.predict(X_test_scaled)
-
-accuracy = accuracy_score(
-    y_test,
-    y_pred
-)
-
-print(f"\nTest Accuracy: {accuracy:.4f}")
-
-print("\nClassification Report:")
-
-print(
-    classification_report(
-        y_test,
-        y_pred,
-        target_names=["Human", "AI"]
-    )
-)
-
-print("Confusion Matrix:")
-
-print(
-    confusion_matrix(
-        y_test,
-        y_pred
-    )
-)
-
-
-# ------------------------------------------------
-# STEP 7 - SAVE MODEL
-# ------------------------------------------------
-
-print("\nStep 7: Saving model...")
-
-os.makedirs(
-    MODEL_PATH,
-    exist_ok=True
-)
-
-joblib.dump(
-    model,
-    os.path.join(MODEL_PATH, "voice_detector_svm.pkl")
-)
-
-joblib.dump(
-    scaler,
-    os.path.join(MODEL_PATH, "scaler.pkl")
-)
-
-print("Model saved: models/voice_detector_svm.pkl")
-print("Scaler saved: models/scaler.pkl")
-
-print("\n=== TRAINING COMPLETED ===")
+"""Train the synthetic voice detector (thin wrapper over the voicedetect package).
+
+    python scripts/train.py            # full, reproducible pipeline (audit -> features -> nested CV model
+                                       # comparison -> selection -> calibration -> final model -> test ->
+                                       # robustness / generalisation / explainability -> report)
+    python scripts/train.py --refit    # reuse the saved, validated model selection and calibration
+                                       # decisions; only rebuild manifest/features and refit + test the model
+
+The original single-split SVM script is preserved in git history and reproduced exactly by the
+'legacy' step (reports/legacy_reproduction.json).
+"""
+import argparse
+import json
+import sys
+from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):  # the original script crashed on Windows consoles without UTF-8
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+try:
+    from voicedetect import pipeline
+    from voicedetect.config import FINAL_METADATA_PATH, REPORTS_DIR
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+    try:
+        from voicedetect import pipeline
+        from voicedetect.config import FINAL_METADATA_PATH, REPORTS_DIR
+    except ImportError as exc:
+        sys.exit(f"Missing dependency ({exc}). Activate the project environment first:\n"
+                 "  .venv\\Scripts\\activate   (Windows)   or   source .venv/bin/activate\n"
+                 "  pip install -r requirements.txt && pip install -e .")
+
+FULL = ["manifest", "audit", "features", "legacy", "compare", "select", "augment", "calibrate", "finalize",
+        "test", "robustness", "generalisation", "explain", "errors", "learning", "figures", "report"]
+REFIT = ["manifest", "features", "finalize", "test"]
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--refit", action="store_true", help="refit with the saved selection instead of re-running it")
+    args = ap.parse_args()
+    print("=== SYNTHETIC VOICE DETECTOR - TRAINING ===")
+    if args.refit and not (REPORTS_DIR / "selection" / "calibration.json").exists():
+        print("No saved selection found; running the full pipeline instead.")
+        args.refit = False
+    pipeline.main(REFIT if args.refit else [s for s in FULL if s in pipeline.STEPS])
+    meta = json.loads(FINAL_METADATA_PATH.read_text(encoding="utf-8"))
+    test = json.loads((REPORTS_DIR / "test_metrics.json").read_text(encoding="utf-8"))["deployed"]["scopes"]
+    allm = test["all test windows"]
+    print("\n=== TRAINING COMPLETED ===")
+    print(f"Model      : {meta['model_name']} on {meta['feature_set']} features ({meta['training_setting']} data)")
+    print(f"Version    : {meta['model_version']}   threshold {meta['threshold']:.2f}")
+    print(f"Test (held-out groups): ROC-AUC {allm['roc_auc']:.3f}, balanced accuracy {allm['balanced_accuracy']:.3f}, "
+          f"AI recall {allm['recall']:.3f}, human specificity {allm['specificity']:.3f}")
+    print("Saved      : models/final_model.joblib + models/metadata.json ; reports in reports/")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

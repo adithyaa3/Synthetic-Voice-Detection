@@ -1,0 +1,10 @@
+source,generator,generator_type,truth,n,errors,error_rate,mean_p_ai
+asvspoof2019_la,A04,"TTS, waveform concatenation",ai,57,49,0.8596491228070176,0.31708631271339693
+asvspoof2019_la,A06,"VC, spectral filtering",ai,59,42,0.711864406779661,0.5094573510945506
+asvspoof2019_la,A05,"VC, vocoder",ai,58,22,0.3793103448275862,0.6708442504247457
+asvspoof2019_la,A03,"TTS, vocoder",ai,58,10,0.1724137931034483,0.809073753407613
+asvspoof2019_la,A01,"TTS, neural waveform model",ai,57,5,0.08771929824561403,0.8444436559150982
+asvspoof2019_la,A02,"TTS, vocoder",ai,57,3,0.05263157894736842,0.8814486621539418
+user_voice_conversion,user_vc,voice conversion (user data; tool unknown),ai,420,16,0.0380952380952381,0.9152054631305803
+asvspoof2019_la,human,bona fide speech,human,450,26,0.057777777777777775,0.2522850305094338
+user_commonvoice,human,bona fide speech,human,464,18,0.03879310344827586,0.09246258164292229

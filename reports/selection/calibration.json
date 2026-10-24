@@ -1,0 +1,256 @@
+{
+  "role": "deployed",
+  "config": {
+    "setting": "combined",
+    "model": "hist_gb",
+    "feature_set": "extended",
+    "aug": [
+      "mp3cv"
+    ]
+  },
+  "augmentation": [
+    "mp3cv"
+  ],
+  "methods": {
+    "none": {
+      "log_loss_mean": 0.39638483611508996,
+      "brier_mean": 0.09232260258240273,
+      "ece_mean": 0.08141440038507046,
+      "roc_auc_mean": 0.9608105208188803,
+      "pooled_ece": 0.07320471883923915
+    },
+    "sigmoid": {
+      "log_loss_mean": 0.26790893262890075,
+      "brier_mean": 0.08101938350480893,
+      "ece_mean": 0.062468048068971216,
+      "roc_auc_mean": 0.9608105208188803,
+      "pooled_ece": 0.03310250060931838
+    },
+    "isotonic": {
+      "log_loss_mean": 0.29299297040626726,
+      "brier_mean": 0.08392320869617359,
+      "ece_mean": 0.06837086813547429,
+      "roc_auc_mean": 0.9581539364118816,
+      "pooled_ece": 0.030901495751901133
+    }
+  },
+  "chosen_method": "sigmoid",
+  "dev_robustness_at_threshold": {
+    "clean": {
+      "roc_auc": 0.9573018493866802,
+      "balanced_accuracy": 0.8799769755071958,
+      "recall": 0.8080939947780679,
+      "specificity": 0.9518599562363238
+    },
+    "mp3": {
+      "roc_auc": 0.9458324525369792,
+      "balanced_accuracy": 0.847321331649822,
+      "recall": 0.7493472584856397,
+      "specificity": 0.9452954048140044
+    },
+    "white20": {
+      "roc_auc": 0.6387175700304517,
+      "balanced_accuracy": 0.5088769989316179,
+      "recall": 0.9947780678851175,
+      "specificity": 0.022975929978118162
+    },
+    "room20": {
+      "roc_auc": 0.6778513520462089,
+      "balanced_accuracy": 0.5069002062491788,
+      "recall": 0.9973890339425587,
+      "specificity": 0.016411378555798686
+    },
+    "mic": {
+      "roc_auc": 0.6132078031891494,
+      "balanced_accuracy": 0.5122335472002102,
+      "recall": 0.9686684073107049,
+      "specificity": 0.05579868708971553
+    }
+  },
+  "folds_mean_auc": 0.9608105208188803,
+  "selection_rule": "lowest mean outer-fold log loss (Brier as tie-break), on validation folds only",
+  "decision": {
+    "threshold": 0.64,
+    "expected_cost_at_threshold": 0.13988095238095238,
+    "expected_cost_at_0.5": 0.16547619047619047,
+    "cost_false_alarm": 2.0,
+    "cost_miss": 1.0,
+    "metrics_at_threshold": {
+      "n": 1680,
+      "n_ai": 766,
+      "n_human": 914,
+      "accuracy": 0.8863095238095238,
+      "balanced_accuracy": 0.8799769755071958,
+      "precision": 0.9336349924585219,
+      "recall": 0.8080939947780679,
+      "specificity": 0.9518599562363238,
+      "f1": 0.8663400979706088,
+      "roc_auc": 0.9573018493866802,
+      "pr_auc": 0.9567052215955334,
+      "brier": 0.08106695656974695,
+      "log_loss": 0.268090734389046,
+      "ece": 0.03310250060931838,
+      "tn": 870,
+      "fp": 44,
+      "fn": 147,
+      "tp": 619,
+      "threshold": 0.64
+    },
+    "metrics_at_0.5": {
+      "n": 1680,
+      "n_ai": 766,
+      "n_human": 914,
+      "accuracy": 0.8886904761904761,
+      "balanced_accuracy": 0.8875556330021539,
+      "precision": 0.8804204993429697,
+      "recall": 0.8746736292428199,
+      "specificity": 0.9004376367614879,
+      "f1": 0.8775376555337263,
+      "roc_auc": 0.9573018493866802,
+      "pr_auc": 0.9567052215955334,
+      "brier": 0.08106695656974695,
+      "log_loss": 0.268090734389046,
+      "ece": 0.03310250060931838,
+      "tn": 823,
+      "fp": 91,
+      "fn": 96,
+      "tp": 670,
+      "threshold": 0.5
+    },
+    "inconclusive": {
+      "threshold": 0.64,
+      "halfwidth": 0.15,
+      "band_low": 0.49,
+      "band_high": 0.79,
+      "fraction_inconclusive": 0.13095238095238096,
+      "accuracy_outside_band": 0.928082191780822,
+      "n_decided": 1460,
+      "accuracy_inside_band_if_forced": 0.6090909090909091
+    },
+    "ece": 0.03310250060931838,
+    "inconclusive_halfwidth": 0.15
+  },
+  "decision_by_domain_for_information": {
+    "user data": {
+      "threshold": 0.63,
+      "expected_cost_at_threshold": 0.05656108597285068,
+      "expected_cost_at_0.5": 0.06787330316742081,
+      "cost_false_alarm": 2.0,
+      "cost_miss": 1.0,
+      "metrics_at_threshold": {
+        "n": 884,
+        "n_ai": 420,
+        "n_human": 464,
+        "accuracy": 0.9638009049773756,
+        "balanced_accuracy": 0.9639367816091954,
+        "precision": 0.9575471698113207,
+        "recall": 0.9666666666666667,
+        "specificity": 0.9612068965517241,
+        "f1": 0.9620853080568721,
+        "roc_auc": 0.9944735221674876,
+        "pr_auc": 0.9933923058155394,
+        "brier": 0.029015067793434005,
+        "log_loss": 0.11740518964528064,
+        "ece": 0.04177977687806211,
+        "tn": 446,
+        "fp": 18,
+        "fn": 14,
+        "tp": 406,
+        "threshold": 0.63
+      },
+      "metrics_at_0.5": {
+        "n": 884,
+        "n_ai": 420,
+        "n_human": 464,
+        "accuracy": 0.9626696832579186,
+        "balanced_accuracy": 0.963762315270936,
+        "precision": 0.9387755102040817,
+        "recall": 0.9857142857142858,
+        "specificity": 0.9418103448275862,
+        "f1": 0.9616724738675958,
+        "roc_auc": 0.9944735221674876,
+        "pr_auc": 0.9933923058155394,
+        "brier": 0.029015067793434005,
+        "log_loss": 0.11740518964528064,
+        "ece": 0.04177977687806211,
+        "tn": 437,
+        "fp": 27,
+        "fn": 6,
+        "tp": 414,
+        "threshold": 0.5
+      },
+      "inconclusive": {
+        "threshold": 0.63,
+        "halfwidth": 0.15,
+        "band_low": 0.48,
+        "band_high": 0.78,
+        "fraction_inconclusive": 0.06561085972850679,
+        "accuracy_outside_band": 0.9818401937046005,
+        "n_decided": 826,
+        "accuracy_inside_band_if_forced": 0.7068965517241379
+      },
+      "ece": 0.04177977687806211
+    },
+    "supplementary (ASVspoof)": {
+      "threshold": 0.64,
+      "expected_cost_at_threshold": 0.22989949748743718,
+      "expected_cost_at_0.5": 0.27386934673366836,
+      "cost_false_alarm": 2.0,
+      "cost_miss": 1.0,
+      "metrics_at_threshold": {
+        "n": 796,
+        "n_ai": 346,
+        "n_human": 450,
+        "accuracy": 0.8027638190954773,
+        "balanced_accuracy": 0.7818047527296081,
+        "precision": 0.8921161825726142,
+        "recall": 0.6213872832369942,
+        "specificity": 0.9422222222222222,
+        "f1": 0.7325383304940375,
+        "roc_auc": 0.8720359666024405,
+        "pr_auc": 0.8720714674924727,
+        "brier": 0.13887332551228543,
+        "log_loss": 0.4354349825718205,
+        "ece": 0.041044632633438806,
+        "tn": 424,
+        "fp": 26,
+        "fn": 131,
+        "tp": 215,
+        "threshold": 0.64
+      },
+      "metrics_at_0.5": {
+        "n": 796,
+        "n_ai": 346,
+        "n_human": 450,
+        "accuracy": 0.8065326633165829,
+        "balanced_accuracy": 0.7988310854206808,
+        "precision": 0.8,
+        "recall": 0.7398843930635838,
+        "specificity": 0.8577777777777778,
+        "f1": 0.7687687687687688,
+        "roc_auc": 0.8720359666024405,
+        "pr_auc": 0.8720714674924727,
+        "brier": 0.13887332551228543,
+        "log_loss": 0.4354349825718205,
+        "ece": 0.041044632633438806,
+        "tn": 386,
+        "fp": 64,
+        "fn": 90,
+        "tp": 256,
+        "threshold": 0.5
+      },
+      "inconclusive": {
+        "threshold": 0.64,
+        "halfwidth": 0.15,
+        "band_low": 0.49,
+        "band_high": 0.79,
+        "fraction_inconclusive": 0.20100502512562815,
+        "accuracy_outside_band": 0.8569182389937107,
+        "n_decided": 636,
+        "accuracy_inside_band_if_forced": 0.5875
+      },
+      "ece": 0.041044632633438806
+    }
+  },
+  "cost_rationale": "A false alarm (a real person's voice labelled synthetic) is treated as twice as costly as a missed synthetic voice, because acting on a false accusation harms a real person, whereas a miss leaves the status quo. The threshold minimising expected cost on out-of-fold validation predictions is used; an inconclusive band of +/- 0.15 around it is shown in the UI."
+}

@@ -1,0 +1,164 @@
+{
+  "description": "Original scripts/train.py pipeline reproduced (features, split, model unchanged).",
+  "n_files": 661,
+  "n_human": 605,
+  "n_ai": 56,
+  "original_split": {
+    "n": 133,
+    "n_ai": 11,
+    "n_human": 122,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier": 0.002092096985813391,
+    "log_loss": 0.012108829382931063,
+    "ece": 0.010783416101987367,
+    "tn": 122,
+    "fp": 0,
+    "fn": 0,
+    "tp": 11,
+    "threshold": 0.5,
+    "accuracy_from_predict": 1.0,
+    "majority_class_accuracy": 0.9172932330827067,
+    "n_test": 133,
+    "n_test_ai": 11,
+    "test_ai_files": [
+      "linus-to-taylor.wav",
+      "biden-to-Trump.wav",
+      "ryan-to-margot.wav",
+      "linus-to-musk.wav",
+      "taylor-to-linus.wav",
+      "ryan-to-trump.wav",
+      "margot-to-musk.wav",
+      "trump-to-taylor.wav",
+      "ryan-to-obama.wav",
+      "taylor-to-musk.wav",
+      "linus-to-margot.wav"
+    ],
+    "test_ai_files_with_same_source_recording_in_train": [
+      "linus-to-taylor.wav",
+      "biden-to-Trump.wav",
+      "ryan-to-margot.wav",
+      "linus-to-musk.wav",
+      "taylor-to-linus.wav",
+      "ryan-to-trump.wav",
+      "margot-to-musk.wav",
+      "trump-to-taylor.wav",
+      "ryan-to-obama.wav",
+      "taylor-to-musk.wav",
+      "linus-to-margot.wav"
+    ],
+    "test_human_clips_whose_run_group_is_in_train": 120
+  },
+  "group_cv_5fold_x3": {
+    "accuracy": {
+      "mean": 0.9504359567901234,
+      "std": 0.023713145183825658
+    },
+    "balanced_accuracy": {
+      "mean": 0.7353404171585989,
+      "std": 0.115099113710396
+    },
+    "recall": {
+      "mean": 0.4761904761904762,
+      "std": 0.23013918127941865
+    },
+    "specificity": {
+      "mean": 0.9944903581267218,
+      "std": 0.007435829841673032
+    },
+    "roc_auc": {
+      "mean": 0.9695789059425424,
+      "std": 0.04463442728719756
+    },
+    "pr_auc": {
+      "mean": 0.856266356424319,
+      "std": 0.13317380136890947
+    }
+  },
+  "leave_one_source_out": {
+    "accuracy": {
+      "mean": 0.9371695731622354,
+      "std": 0.06171468326065812
+    },
+    "balanced_accuracy": {
+      "mean": 0.7579957356076759,
+      "std": 0.1669135514182974
+    },
+    "recall": {
+      "mean": 0.5178571428571428,
+      "std": 0.33229917322313834
+    },
+    "specificity": {
+      "mean": 0.9981343283582089,
+      "std": 0.0052769162775115645
+    },
+    "roc_auc": {
+      "mean": 0.969517288041586,
+      "std": 0.04499443066314073
+    }
+  },
+  "leave_one_source_out_per_source": [
+    {
+      "held_out_source": "biden",
+      "recall": 0.2857142857142857,
+      "specificity": 0.9850746268656716,
+      "roc_auc": 0.9786780383795309,
+      "balanced_accuracy": 0.6353944562899787
+    },
+    {
+      "held_out_source": "linus",
+      "recall": 0.0,
+      "specificity": 1.0,
+      "roc_auc": 0.8648648648648648,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "held_out_source": "margot",
+      "recall": 1.0,
+      "specificity": 1.0,
+      "roc_auc": 1.0,
+      "balanced_accuracy": 1.0
+    },
+    {
+      "held_out_source": "musk",
+      "recall": 0.7142857142857143,
+      "specificity": 1.0,
+      "roc_auc": 0.990521327014218,
+      "balanced_accuracy": 0.8571428571428572
+    },
+    {
+      "held_out_source": "obama",
+      "recall": 0.2857142857142857,
+      "specificity": 1.0,
+      "roc_auc": 0.9788359788359788,
+      "balanced_accuracy": 0.6428571428571428
+    },
+    {
+      "held_out_source": "ryan",
+      "recall": 0.8571428571428571,
+      "specificity": 1.0,
+      "roc_auc": 1.0,
+      "balanced_accuracy": 0.9285714285714286
+    },
+    {
+      "held_out_source": "taylor",
+      "recall": 0.42857142857142855,
+      "specificity": 1.0,
+      "roc_auc": 0.9523809523809524,
+      "balanced_accuracy": 0.7142857142857143
+    },
+    {
+      "held_out_source": "trump",
+      "recall": 0.5714285714285714,
+      "specificity": 1.0,
+      "roc_auc": 0.9908571428571428,
+      "balanced_accuracy": 0.7857142857142857
+    }
+  ]
+}

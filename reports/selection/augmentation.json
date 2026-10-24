@@ -1,0 +1,25 @@
+{
+  "config": {
+    "setting": "combined",
+    "model": "hist_gb",
+    "feature_set": "extended",
+    "roc_auc_mean": 0.9657843960046565,
+    "roc_auc_std": 0.017388875741417176
+  },
+  "no_augmentation": {
+    "roc_auc_mean": 0.9657843960046565,
+    "roc_auc_std": 0.017388875741417176,
+    "roc_auc_mp3_mean": 0.9149584715896271,
+    "balanced_accuracy_mean": 0.8962441376029971,
+    "balanced_accuracy_mp3_mean": 0.8043516150051344
+  },
+  "mp3_augmentation": {
+    "roc_auc_mean": 0.9546314604497075,
+    "roc_auc_std": 0.02483394516366525,
+    "roc_auc_mp3_mean": 0.9399013379682387,
+    "balanced_accuracy_mean": 0.873455502666669,
+    "balanced_accuracy_mp3_mean": 0.8559499198390259
+  },
+  "rule": "adopt augmentation if clean CV AUC drops by < 0.005 and CV AUC on MP3 versions of the validation windows improves",
+  "adopted": false
+}

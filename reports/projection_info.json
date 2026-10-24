@@ -1,0 +1,9 @@
+{
+  "pca_explained_variance": [
+    0.2236024218923882,
+    0.12153621443810309
+  ],
+  "setting": "combined",
+  "feature_set": "extended",
+  "n_points": 1680
+}

@@ -1,0 +1,1162 @@
+{
+  "passed": 88,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "page overview @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page overview @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page dataset @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page dataset @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page features @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page features @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page models @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page models @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page evaluation @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page evaluation @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page robustness @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page robustness @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page errors @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page errors @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page live @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page live @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page about @ 1440px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page about @ 1440px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page overview @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page overview @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page dataset @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page dataset @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page features @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page features @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page models @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page models @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page evaluation @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page evaluation @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page robustness @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page robustness @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page errors @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page errors @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page live @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page live @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page about @ 768px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page about @ 768px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page overview @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page overview @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page dataset @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page dataset @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page features @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page features @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page models @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page models @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page evaluation @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page evaluation @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page robustness @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page robustness @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page errors @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page errors @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page live @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page live @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page about @ 390px renders without errors",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "page about @ 390px has no horizontal overflow",
+      "pass": true,
+      "detail": "{'exceptions': 0, 'friendly_page_error': 0, 'empty_states': 0, 'horizontal_overflow_px': 0}"
+    },
+    {
+      "check": "overview tile 'Test ROC-AUC' equals artifact",
+      "pass": true,
+      "detail": "shown '0.874' vs artifact '0.874'"
+    },
+    {
+      "check": "overview tile 'Test balanced accuracy' equals artifact",
+      "pass": true,
+      "detail": "shown '0.714' vs artifact '0.714'"
+    },
+    {
+      "check": "overview tile 'Audio files analysed' equals artifact",
+      "pass": true,
+      "detail": "shown '2,126' vs artifact '2,126'"
+    },
+    {
+      "check": "overview tile 'Analysis windows (4 s)' equals artifact",
+      "pass": true,
+      "detail": "shown '2,564' vs artifact '2,564'"
+    },
+    {
+      "check": "overview download 'Full report (HTML)'",
+      "pass": true,
+      "detail": "3781734 bytes"
+    },
+    {
+      "check": "overview download 'Model comparison (CSV)'",
+      "pass": true,
+      "detail": "24272 bytes"
+    },
+    {
+      "check": "overview download 'Test predictions (CSV)'",
+      "pass": true,
+      "detail": "309368 bytes"
+    },
+    {
+      "check": "dataset partition filter updates the table",
+      "pass": true,
+      "detail": "9 rows \u00b7 'dev' = used for model development (cross-validation); 'test' = held out until the end."
+    },
+    {
+      "check": "dataset example audio players present",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "check": "dataset example select changes clip",
+      "pass": true,
+      "detail": "'asvspoof/LA_D_1038259' -> 'asvspoof/LA_D_1038259'"
+    },
+    {
+      "check": "features coefficient slider responds to keyboard",
+      "pass": true,
+      "detail": "1 -> 2"
+    },
+    {
+      "check": "features projection switch (PCA)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "models setting switch 'User data only'",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "models setting switch 'User data, codec-matched control'",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "models setting switch 'User + supplementary (ASVspoof 2019 LA)'",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "models table CSV download",
+      "pass": true,
+      "detail": "model_comparison_combined.csv"
+    },
+    {
+      "check": "evaluation threshold slider recomputes recall",
+      "pass": true,
+      "detail": "'AI recall\\n\\n0.808' -> 'AI recall\\n\\n0.567'"
+    },
+    {
+      "check": "evaluation slider value matches recomputation from saved predictions",
+      "pass": true,
+      "detail": "thr 0.89: 'AI recall\\n\\n0.567' vs 0.567"
+    },
+    {
+      "check": "evaluation switches (test / ASVspoof / PR tab)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "robustness model toggle (pre-registered)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "robustness scope/pills/tabs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "errors: selecting a misclassified window plays its audio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "upload human_mp3 (user_human/common_voice_en_42699890) classified end to end",
+      "pass": true,
+      "detail": "VERDICT Human Most consistent with a real human voice. Calibrated probability of AI-generated speech: 2.0% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79"
+    },
+    {
+      "check": "upload ai_wav (user_ai/biden-to-Obama) classified end to end",
+      "pass": true,
+      "detail": "VERDICT AI-generated Most consistent with synthetic (AI-generated or converted) speech. Calibrated probability of AI-generated speech: 94.7% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79"
+    },
+    {
+      "check": "upload fake_wav shows friendly message",
+      "pass": true,
+      "detail": "couldn't be decoded"
+    },
+    {
+      "check": "upload silent_wav shows friendly message",
+      "pass": true,
+      "detail": "silent or almost silent"
+    },
+    {
+      "check": "upload short_wav shows friendly message",
+      "pass": true,
+      "detail": "is too short"
+    },
+    {
+      "check": "uploader rejects notes_txt with a message",
+      "pass": true,
+      "detail": "not allowed"
+    },
+    {
+      "check": "uploader rejects big_wav with a message",
+      "pass": true,
+      "detail": "larger than"
+    },
+    {
+      "check": "microphone (human audio via fake device): record -> play-back control -> classify",
+      "pass": true,
+      "detail": "VERDICT Human Most consistent with a real human voice. Calibrated probability of AI-generated speech: 9.9% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79"
+    },
+    {
+      "check": "microphone (human): clearing the recording allows re-recording",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "microphone (ai audio via fake device): record -> play-back control -> classify",
+      "pass": true,
+      "detail": "VERDICT AI-generated Most consistent with synthetic (AI-generated or converted) speech. Calibrated probability of AI-generated speech: 98.9% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79"
+    },
+    {
+      "check": "microphone (ai): clearing the recording allows re-recording",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "microphone permission denied: widget explains how to allow access + help expander",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "console_errors": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/about"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/about"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/about"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/about"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/about"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/about"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/dataset"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/features"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/models"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/evaluation"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/robustness"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/errors"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "url": "http://localhost:8599/live"
+    }
+  ],
+  "page_errors": [],
+  "failed_requests": [
+    {
+      "url": "blob:http://localhost:8599/af752ae1-2f8c-4103-99dc-a5f25e4d937e",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:http://localhost:8599/50afc957-b69f-479e-99aa-e7ba633b4bd1",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:http://localhost:8599/280ee67b-e002-4281-b1a1-51ca229ffa86",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:http://localhost:8599/4c359c0d-6032-4636-948e-795d45cc80b3",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "external_requests": [],
+  "http_errors": [
+    {
+      "url": "http://localhost:8599/dataset/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/about/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/about"
+    },
+    {
+      "url": "http://localhost:8599/about/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/about"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/about/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/about"
+    },
+    {
+      "url": "http://localhost:8599/about/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/about"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/about/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/about"
+    },
+    {
+      "url": "http://localhost:8599/about/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/about"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/dataset/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/dataset"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/features/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/features"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/models/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/models"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/evaluation/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/evaluation"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/robustness/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/robustness"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/errors/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/errors"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/host-config",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    },
+    {
+      "url": "http://localhost:8599/live/_stcore/health",
+      "status": 404,
+      "page": "http://localhost:8599/live"
+    }
+  ],
+  "upload_verdicts": {
+    "human_mp3": "VERDICT\nHuman\nMost consistent with a real human voice. Calibrated probability of AI-generated speech: 2.0% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79",
+    "ai_wav": "VERDICT\nAI-generated\nMost consistent with synthetic (AI-generated or converted) speech. Calibrated probability of AI-generated speech: 94.7% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79"
+  },
+  "mic_verdict_human": "VERDICT\nHuman\nMost consistent with a real human voice. Calibrated probability of AI-generated speech: 9.9% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79",
+  "mic_verdict_ai": "VERDICT\nAI-generated\nMost consistent with synthetic (AI-generated or converted) speech. Calibrated probability of AI-generated speech: 98.9% \u00b7 threshold 0.64 \u00b7 inconclusive band 0.49-0.79",
+  "test_media_sources": {
+    "human": "user_human/common_voice_en_42699890",
+    "ai": "user_ai/biden-to-Obama"
+  },
+  "browser": "Google Chrome (Playwright channel='chrome')",
+  "screenshots_dir": "reports\\screenshots"
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voicedetect"
+version = "1.0.0"
+description = "Synthetic (AI-generated) voice detection: leakage-safe predictive analysis and app"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "data: needs the real dataset in data/ (skipped when absent)",
+    "model: needs a trained model in models/ (skipped when absent)",
+]
+filterwarnings = ["ignore::DeprecationWarning:numba.*"]

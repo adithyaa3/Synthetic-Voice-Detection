@@ -8,3 +8,11 @@ venv/
 .venv/
 
 .env
+# derived artifacts (regenerate with: python -m voicedetect.pipeline all)
+features/
+models/*.joblib
+models/legacy_original/
+uploads/
+reports/run_*.log
+*.egg-info/
+.pytest_cache/

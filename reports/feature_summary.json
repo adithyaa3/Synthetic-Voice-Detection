@@ -1,0 +1,18 @@
+{
+  "cache_key": "f77b4d4e1537994f",
+  "files": 2126,
+  "files_ok": 2032,
+  "files_skipped": 94,
+  "skipped_by_reason": {
+    "too_short": 91,
+    "silent": 3
+  },
+  "windows_orig": 2564,
+  "windows_by_source_class": {
+    "asvspoof2019_la/ai": 661,
+    "asvspoof2019_la/human": 719,
+    "user_commonvoice/human": 624,
+    "user_voice_conversion/ai": 560
+  },
+  "seconds": 65.0
+}
